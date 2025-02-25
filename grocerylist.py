@@ -35,6 +35,7 @@ grocerys = []
 # Use a loop to let the user choose an action:
 while True:
     listdisplayer(grocerys)
+    print("Add an item (1), Remove an item (2), Display the gorcery list (3), Exit the program (4).")
     choice = input("What would you like to do? ")
 # (1) Add an item
     if choice == "1":
