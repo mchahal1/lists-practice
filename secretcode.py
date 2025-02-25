@@ -19,10 +19,10 @@ def codemaker(msg: str, shift: int) -> str:
             # After the loop, join the list into a string and return it  
             # Get user input for the message and shift value  
             code.append(x)
-    return ''.join(shifted_msg)  # Join the list into a string and return it
+    return ''.join(code)  # Join the list into a string and return it
 
 usermsg = input("Enter a message to shift: ")
 shiftval = int(input("Enter the shift value: "))
 
 # Call the function with the inputs and display the result
-print(f"Shifted message: {shift_letters(usermsg, shiftval)}")
+print(f"Shifted message: {codemaker(usermsg, shiftval)}")
